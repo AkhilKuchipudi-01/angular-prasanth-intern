@@ -1,0 +1,504 @@
+$primaryBlue: #0056B3;
+$textDark: #333333;
+$textLight: #666666;
+$bgLight: #F4F7F6;
+$borderRadius: 8px;
+$paddingStandard: 24px;
+$black: #000;
+$white: #fff;
+$fontfamily: 'Inter', sans-serif;
+
+.dark-theme {
+    background-color: #121212;
+    color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+
+  // background-color: red;
+  .nav {
+    height: 100%;
+    // width: 60%;
+    // background-color: #0056B3;
+    justify-content: space-between;
+    padding: 5px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+
+    .nav-left {
+      display: flex;
+      // width: 300px;
+      justify-content: flex-start;
+      align-items: center;
+
+      // padding-right: 3rem;
+      // margin-right: 1rem;
+      // background-color: #0056B3;
+      .navLogo {
+        width: 53px;
+        height: 53px;
+      }
+
+      .navLogoText {
+        font-size: 22px;
+      }
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: #000;
+      padding-right: 2rem;
+      gap: 3rem;
+      width: 430px;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      #loginButtton {
+        color: #fff;
+      }
+
+      .loginbtn {
+        width: 110px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: $primaryBlue;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
+
+.heroSection {
+  width: 100%;
+  height: 600px;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .heroLeft {
+    width: 40%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // align-items: end;
+    // gap: 1rem;
+    // background-color: aqua;
+    // border: 1px solid black;
+    .subText {
+      font-size: 23px;
+    }
+
+    .btnDiv {
+      margin-top: 1.5rem;
+
+      #getStartedBtn {
+        background-color: $primaryBlue ;
+        font-family: $fontfamily;
+        color: $bgLight;
+      }
+    }
+
+    .heroLeftHeading {
+      font-size: 57px;
+      font-weight: 650;
+      font-family: $fontfamily;
+
+      .subText {
+        // color: $primaryBlue;
+        font-family: $fontfamily;
+        // font-size: 19px !important;
+      }
+    }
+
+
+
+    .btn {
+      width: 150px;
+      height: 45px;
+      border: none;
+      border-radius: 7px;
+      font-family: $fontfamily;
+      font-size: 15px;
+    }
+
+    .info {
+      display: flex;
+      margin-top: 1.5rem;
+      gap: 2rem;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $fontfamily;
+        font-size: 15px;
+      }
+    }
+
+  }
+
+  .heroRight {
+    width: 35%;
+    height: 85%;
+    // background-color: rgb(89, 98, 98);
+    // border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroImage {
+    width: 85%;
+    height: 79%;
+    border-radius: 10px;
+  }
+}
+
+.subText {
+  font-size: 28px;
+  opacity: 50%;
+  // font-family: $fontfamily;
+}
+
+.features {
+  width: 100%;
+  height: 500px;
+  // background-color: green;
+  background-color: $bgLight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // padding: 1rem;
+  .featuresTop {
+    width: 78%;
+    height: 100px;
+    // background-color: red;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: flex-end;
+
+    // padding-left: 5rem;
+    .sptext {
+      color: $primaryBlue;
+    }
+
+    .infoHead {
+      font-size: 30px;
+    }
+  }
+}
+
+.processInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  // border: 1px solid black;
+  background-color: $bgLight;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  gap: 1rem;
+  // padding: $paddingStandard;
+  justify-content: flex-start;
+
+  .sptext {
+    font-size: 13px;
+    color: $primaryBlue;
+    margin-left: 4.3rem;
+  }
+
+  .infoHead {
+    font-size: 25px;
+    margin-left: 4.3rem;
+  }
+
+}
+
+.steps {
+  // background-color: red;
+  width: 100%;
+  height: 350px;
+  background-color: $bgLight;
+  display: flex;
+  justify-content: center;
+  // justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  .card {
+    width: 290px;
+    height: 220px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    gap: 1.5rem;
+    padding: 2rem !important;
+
+    .stepshead {
+      font-size: 20px;
+      font-family: $fontfamily;
+    }
+
+    .stepsubtext {
+      font-size: 17px;
+      font-family: $fontfamily;
+      opacity: 70%;
+    }
+
+  }
+
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+
+  // background-color: red;
+  // background-color: #fff;
+  .topDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1rem;
+
+    .testomialsHead {
+      font-size: 30px;
+      font-family: $fontfamily;
+    }
+
+    .testomialSub {
+      font-size: 18px;
+      font-family: $fontfamily;
+      opacity: 50%;
+    }
+  }
+
+  .bottomDiv {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 2rem;
+
+    .testmonialCard {
+      width: 340px;
+      height: 220px;
+      background-color: #F9FAFB;
+      border-radius: 12px;
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      justify-content: space-between;
+
+      .stars {
+        color: $primaryBlue;
+      }
+
+      .testmonialCardText {
+        font-size: 22px;
+      }
+
+      .testmonialCardInnetDiv {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+      }
+
+      .profileImage {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+      }
+
+      .testprofile {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.blog {
+  width: 100%;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: $bgLight;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .blogTop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    
+
+    .blogText {
+      color: $primaryBlue;
+    }
+
+    .blogMainText {
+
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .blogSubText {
+      font-size: 20px;
+      opacity: 50%;
+    }
+
+  }
+
+  .blogBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    .image {
+      object-fit: contain;
+      padding: 0.5rem;
+
+      .cardimage {
+        overflow: hidden;
+        width: 90%;
+        height: 80%;
+      }
+    }
+
+    .blogBottomCard {
+      width: 350px;
+      height: 420px;
+      border-radius: 10px;
+      // background-color: ;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+
+      // border: 1px black solid;
+      .image {
+        height: 50%;
+        width: 100%;
+        // background-color: #0056B3;
+      }
+
+      .cardText {
+        padding: 1rem;
+        width: 315px;
+        height: 40%;
+        // background-color: red;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+
+        .cardtextMain {
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        .readMore {
+          color: #0056B3;
+        }
+
+        .cardtextMainSub {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.subscribe {
+  width: 100%;
+  height: 300px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+
+  .subscribeNOte {
+    font-size: 33px;
+    font-weight: 600;
+  }
+
+  .subscribeSunText {
+    font-size: 20px;
+    opacity: 50%;
+  }
+
+  .btnsubscribe {
+    color: white;
+    border: none;
+  }
+
+  .subscribebtn {
+    display: flex;
+    gap: 1rem;
+
+    // color: white;
+    input {
+      width: 300px;
+      height: 30px;
+      border-radius: 10px;
+      //  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.05);
+      // border: 1px solid #000;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border:none;
+      padding: 0.4rem;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+    button {
+      width: 100px;
+      height: 41px;
+      border-radius: 10px;
+      background-color: $primaryBlue;
+    }
+  }
+}
